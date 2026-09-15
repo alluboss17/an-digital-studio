@@ -7,7 +7,7 @@ export default function Page() {
           AN Digital Studio<span className="text-zinc-500"></span>
         </span>
         <a
-          href="mailto:contact@andigitalstudio.com?subject=Technical%20Audit%20Inquiry"
+          href="mailto:hello@andigitalstudio.com?subject=Technical%20Audit%20Inquiry"
           className="px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white border border-zinc-700 hover:border-zinc-500 rounded-md transition-all"
         >
           Get in Touch
