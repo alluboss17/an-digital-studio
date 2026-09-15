@@ -30,7 +30,7 @@ export default function Page() {
         </p>
 
         <a
-          href="mailto:contact@andigitalstudio.com?subject=Free%20Technical%20Audit%20Request"
+          href="mailto:hello@andigitalstudio.com?subject=Free%20Technical%20Audit%20Request"
           className="px-8 py-4 bg-white text-black font-semibold text-lg md:text-xl rounded-lg hover:bg-zinc-200 hover:scale-[1.02] active:scale-95 transition-all duration-300 ease-in-out shadow-xl focus:outline-none focus:ring-4 focus:ring-zinc-700"
         >
           Book a Free Technical Audit
