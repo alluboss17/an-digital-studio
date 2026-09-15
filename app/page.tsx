@@ -62,7 +62,7 @@ export default function Page() {
       {/* Footer */}
       <footer className="w-full max-w-6xl py-8 border-t border-zinc-900 flex justify-between items-center text-xs text-zinc-500">
         <span>© {new Date().getFullYear()} AN Digital Studio. All rights reserved.</span>
-        <span>Cairo • Remote Worldwide</span>
+        <span>• Remote Worldwide</span>
       </footer>
     </main>
   );
