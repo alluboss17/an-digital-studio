@@ -6,7 +6,7 @@ export default function Page() {
       {/* Header */}
       <header className="w-full max-w-6xl py-8 px-6 flex justify-between items-center border-b border-zinc-800">
         <span className="text-xl font-bold tracking-tight text-white">
-          AN Digital Studio<span className="text-zinc-500">.</span>
+          AN Digital Studio<span className="text-zinc-500"></span>
         </span>
 
         <nav className="flex gap-6 items-center">
