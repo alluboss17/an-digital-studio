@@ -1,18 +1,30 @@
+import Link from 'next/link';
+
 export default function Page() {
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen bg-zinc-950 px-6 sm:px-8 md:px-12 w-full text-zinc-100">
+    <main className="flex flex-col items-center justify-between min-h-screen bg-zinc-950 text-white">
       {/* Header */}
-      <header className="w-full max-w-6xl py-8 flex justify-between items-center border-b border-zinc-800/80">
+      <header className="w-full max-w-6xl py-8 px-6 flex justify-between items-center border-b border-zinc-800">
         <span className="text-xl font-bold tracking-tight text-white">
-          AN Digital Studio<span className="text-zinc-500"></span>
+          AN Digital Studio<span className="text-zinc-500">.</span>
         </span>
-        <a
-          href="mailto:hello@andigitalstudio.com?subject=Technical%20Audit%20Inquiry"
-          className="px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white border border-zinc-700 hover:border-zinc-500 rounded-md transition-all"
-        >
-          Get in Touch
-        </a>
+
+        <nav className="flex gap-6 items-center">
+          <Link href="/work" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            Work
+          </Link>
+          <Link href="/about" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            About
+          </Link>
+          <a
+            href="mailto:hello@andigitalstudio.com?subject=Technical%20Audit%20Inquiry"
+            className="px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white border border-zinc-700 rounded-lg transition-colors"
+          >
+            Get in Touch
+          </a>
+        </nav>
       </header>
+
 
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center max-w-4xl w-full mx-auto my-auto py-16">
