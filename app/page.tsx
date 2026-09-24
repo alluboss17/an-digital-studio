@@ -25,7 +25,6 @@ export default function Page() {
         </nav>
       </header>
 
-
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center max-w-4xl w-full mx-auto my-auto py-16">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-400 mb-8">
@@ -42,7 +41,9 @@ export default function Page() {
         </p>
 
         <a
-          href="mailto:hello@andigitalstudio.com?subject=Free%20Technical%20Audit%20Request"
+          href="https://tally.so/r/BzNzvQ"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-8 py-4 bg-white text-black font-semibold text-lg md:text-xl rounded-lg hover:bg-zinc-200 hover:scale-[1.02] active:scale-95 transition-all duration-300 ease-in-out shadow-xl focus:outline-none focus:ring-4 focus:ring-zinc-700"
         >
           Book a Free Technical Audit
@@ -50,7 +51,7 @@ export default function Page() {
       </div>
 
       {/* Core Services Section */}
-      <section className="w-full max-w-6xl py-12 border-t border-zinc-800/80 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="w-full max-w-6xl py-12 border-t border-zinc-800/80 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
         <div className="p-6 rounded-xl border border-zinc-900 bg-zinc-900/40">
           <h3 className="text-lg font-semibold text-white mb-2">⚡ Speed & Performance</h3>
           <p className="text-sm text-zinc-400 leading-relaxed">
@@ -71,8 +72,54 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Featured Work / Live Demo Section */}
+      <section className="w-full max-w-6xl py-16 border-t border-zinc-800/80 px-6 flex flex-col items-center">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-white mb-4">See Our Work in Action</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto text-sm md:text-base">
+            Test the speed, click the buttons, and experience what a high-converting website feels like.
+          </p>
+        </div>
+
+        <div className="w-full max-w-4xl p-1 rounded-2xl bg-gradient-to-b from-zinc-800 to-zinc-900 border border-zinc-800">
+          <div className="p-8 md:p-10 bg-zinc-950 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex-1 text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs text-emerald-400 mb-4">
+                Live Contractor Demo
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-3">The "UK Builder" Blueprint</h3>
+              <p className="text-sm text-zinc-400 mb-6 leading-relaxed">
+                Engineered specifically for trades and construction. Features built-in lead capture, mobile-first design, and sub-second loading times.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://demo.andigitalstudio.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700 text-center"
+                >
+                  View Live Demo ↗
+                </a>
+                <a
+                  href="https://tally.so/r/BzNzvQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 bg-white text-black text-sm font-semibold rounded-lg hover:bg-zinc-200 transition-colors shadow-lg text-center"
+                >
+                  Get a Site Like This
+                </a>
+              </div>
+            </div>
+            {/* Mockup Frame */}
+            <div className="w-full md:w-1/2 aspect-video bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center overflow-hidden">
+              <span className="text-zinc-600 font-mono text-sm">demo.andigitalstudio.com</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="w-full max-w-6xl py-8 border-t border-zinc-900 flex justify-between items-center text-xs text-zinc-500">
+      <footer className="w-full max-w-6xl py-8 px-6 border-t border-zinc-900 flex justify-between items-center text-xs text-zinc-500">
         <span>© {new Date().getFullYear()} AN Digital Studio. All rights reserved.</span>
         <span>• Remote Worldwide</span>
       </footer>
