@@ -13,16 +13,19 @@ export default function AuditPage() {
         </Link>
       </div>
       
-      <div className="flex-grow w-full max-w-4xl mx-auto pt-8">
-        <iframe
-          src="https://tally.so/r/BzNzvQ?transparentBackground=1"
-          width="100%"
-          height="800"
-          frameBorder="0"
-          marginHeight={0}
-          marginWidth={0}
-          title="Technical Audit Intake"
-        ></iframe>
+      <div className="flex-grow w-full max-w-4xl mx-auto pt-12 px-4 pb-12">
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-zinc-800">
+          <iframe
+            src="https://tally.so/r/BzNzvQ"
+            width="100%"
+            height="750"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Technical Audit Intake"
+            className="w-full bg-white"
+          ></iframe>
+        </div>
       </div>
     </main>
   );
