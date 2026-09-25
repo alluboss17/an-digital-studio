@@ -89,26 +89,22 @@ export default function Page() {
               <p className="text-sm text-zinc-400 mb-6 leading-relaxed">
                 Engineered specifically for trades and construction. Features built-in lead capture, mobile-first design, and sub-second loading times.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="https://demo.andigitalstudio.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2.5 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700 text-center"
-                >
-                  View Live Demo ↗
-                </a>
-                <a
-                  href="/audit"
-  className="px-8 py-4 bg-white text-black font-semibold text-lg md:text-xl rounded-lg hover:bg-zinc-200 transition-colors"
-
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Get a Site Like This
-                </a>
-              </div>
-            </div>
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+  <a
+    href="https://demo.andigitalstudio.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto px-5 py-2.5 bg-zinc-800 text-white text-sm font-medium rounded-lg hover:bg-zinc-700 transition-colors border border-zinc-700 text-center"
+  >
+    View Live Demo ↗
+  </a>
+  <Link
+    href="/audit"
+    className="w-full sm:w-auto px-5 py-2.5 bg-white text-black text-sm font-semibold rounded-lg hover:bg-zinc-200 transition-colors text-center"
+  >
+    Get a Site Like This
+  </Link>
+</div>
            {/* Mockup Frame */}
 <div className="w-full md:w-1/2 aspect-video bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center overflow-hidden">
   <img 
