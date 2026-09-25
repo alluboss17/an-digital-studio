@@ -100,8 +100,8 @@ export default function Page() {
                 </a>
                 <Link
                   href="/audit"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  
+                  
                   className="w-full sm:w-auto px-5 py-2.5 bg-white text-black text-sm font-semibold rounded-lg hover:bg-zinc-200 transition-colors text-center"
                 >
                   Get a Site Like This
