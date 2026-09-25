@@ -40,14 +40,12 @@ export default function Page() {
           We build lightning-fast web applications and automated operational workflows for growing businesses. Stop losing leads to slow, outdated pages.
         </p>
 
-        <a
-          href="https://tally.so/r/BzNzvQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-8 py-4 bg-white text-black font-semibold text-lg md:text-xl rounded-lg hover:bg-zinc-200 hover:scale-[1.02] active:scale-95 transition-all duration-300 ease-in-out shadow-xl focus:outline-none focus:ring-4 focus:ring-zinc-700"
-        >
-          Book a Free Technical Audit
-        </a>
+       <Link
+  href="/audit"
+  className="px-8 py-4 bg-white text-black font-semibold text-lg md:text-xl rounded-lg hover:bg-zinc-200 transition-colors"
+>
+  Book a Free Technical Audit
+</Link>
       </div>
 
       {/* Core Services Section */}
