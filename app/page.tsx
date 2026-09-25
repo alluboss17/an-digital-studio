@@ -99,19 +99,24 @@ export default function Page() {
                   View Live Demo ↗
                 </a>
                 <a
-                  href="https://tally.so/r/BzNzvQ"
+                  href="/audit"
+  className="px-8 py-4 bg-white text-black font-semibold text-lg md:text-xl rounded-lg hover:bg-zinc-200 transition-colors"
+
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 bg-white text-black text-sm font-semibold rounded-lg hover:bg-zinc-200 transition-colors shadow-lg text-center"
                 >
                   Get a Site Like This
                 </a>
               </div>
             </div>
-            {/* Mockup Frame */}
-            <div className="w-full md:w-1/2 aspect-video bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center overflow-hidden">
-              <span className="text-zinc-600 font-mono text-sm">demo.andigitalstudio.com</span>
-            </div>
+           {/* Mockup Frame */}
+<div className="w-full md:w-1/2 aspect-video bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center overflow-hidden">
+  <img 
+    src="/demo-mockup.png" 
+    alt="UK Builder Blueprint Demo" 
+    className="w-full h-full object-cover object-top"
+  />
+</div>
           </div>
         </div>
       </section>
