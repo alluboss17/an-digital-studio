@@ -16,7 +16,7 @@ export default function AuditPage() {
       <div className="flex-grow w-full max-w-4xl mx-auto pt-12 px-4 pb-12">
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-zinc-800">
           <iframe
-            src="https://tally.so/r/BzNzvQ"
+            src="https://tally.so/r/Zj0r65"
             width="100%"
             height="750"
             frameBorder="0"
