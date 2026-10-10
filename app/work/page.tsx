@@ -53,7 +53,7 @@ export default function WorkPage() {
               </div>
               <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-950">UK Trades Website Blueprint</h2>
               <p className="mt-3 text-sm leading-6 text-slate-600">An illustrative layout direction for a trades business website. It demonstrates a possible way to present services and guide visitors towards a quote enquiry; it is not a commissioned client project.</p>
-              <div className="warning-note mt-6 rounded-xl p-4 text-xs leading-5">Any business name, review, rating, certification, testimonial or other proof shown in this demo must be treated as fictional sample content unless independently verified. Do not present it as a real endorsement or client result.</div>
+              <div className="warning-note mt-6 rounded-xl p-4 text-xs leading-5">Any business name, review, rating, certification, testimonial or other proof shown in this demo must be treated as fictional sample content unless independently verified. Not presenting it as a real endorsement or client result.</div>
               <div className="mt-auto pt-8"><a href="https://demo.andigitalstudio.com/" target="_blank" rel="noopener noreferrer" className="button-primary button-large w-full sm:w-fit">Explore the concept <span aria-hidden="true">↗</span></a></div>
             </article>
           </Reveal>
