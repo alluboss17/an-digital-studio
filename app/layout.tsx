@@ -2,8 +2,17 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const siteName = "AN Digital Studio";
 const siteUrl = "https://www.andigitalstudio.com";
@@ -12,7 +21,10 @@ const defaultDescription =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Websites for UK Trades Businesses | AN Digital Studio", template: "%s | AN Digital Studio" },
+  title: {
+    default: "Websites for UK Trades Businesses | AN Digital Studio",
+    template: "%s | AN Digital Studio",
+  },
   description: defaultDescription,
   applicationName: siteName,
   alternates: { canonical: "/" },
@@ -33,9 +45,14 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export const viewport: Viewport = { themeColor: "#f5f7fc", colorScheme: "light" };
+export const viewport: Viewport = {
+  themeColor: "#f5f7fc",
+  colorScheme: "light",
+};
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -44,13 +61,24 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     email: "hello@andigitalstudio.com",
     logo: `${siteUrl}/logo-make.png`,
     description: defaultDescription,
-    areaServed: { "@type": "Country", name: "United Kingdom" },
+    areaServed: {
+      "@type": "Country",
+      name: "United Kingdom",
+    },
   };
 
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <body className="flex min-h-full flex-col bg-[#f5f7fc] text-slate-900">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
         {children}
       </body>
     </html>
