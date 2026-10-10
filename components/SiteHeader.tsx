@@ -21,7 +21,7 @@ export default function SiteHeader() {
         >
           <span className="brand-mark">
             <Image
-              src="/logo-make.png"
+              src="/logo-make1.png"
               alt=""
               width={42}
               height={42}
