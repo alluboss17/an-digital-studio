@@ -20,14 +20,15 @@ export default function SiteHeader() {
           onClick={() => setMenuOpen(false)}
         >
           <span className="brand-mark">
-            <Image
-              src="/logo-make1.png"
+           <Image
+              src="/logo.png"
               alt=""
               width={42}
               height={42}
               priority
-              className="h-full w-full object-contain"
-            />
+             className="h-full w-full object-contain"
+           />
+            
           </span>
 
           <span className="brand-name">

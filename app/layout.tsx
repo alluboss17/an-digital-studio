@@ -60,7 +60,7 @@ export default function RootLayout({
     name: siteName,
     url: `${siteUrl}/`,
     email: "hello@andigitalstudio.com",
-    logo: `${siteUrl}/logo-make.png`,
+    logo: `${siteUrl}/logo.png`,
     description: defaultDescription,
     areaServed: {
       "@type": "Country",
