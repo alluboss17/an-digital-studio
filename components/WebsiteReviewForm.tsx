@@ -124,10 +124,9 @@ export default function WebsiteReviewForm({ calUrl }: Props) {
       </div>
 
       <form
-        onSubmit={handleSubmit}
-        className="bg-white p-5 sm:p-7"
-        noValidate
-      >
+  onSubmit={handleSubmit}
+  className="bg-white p-5 sm:p-7"
+>
         <div className="grid gap-5 sm:grid-cols-2">
           <label className="text-xs font-bold text-slate-700">
             Your name

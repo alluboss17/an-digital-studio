@@ -68,10 +68,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
-    // Very fast submissions are commonly automated.
-    if (startedAt && Date.now() - startedAt < 1800) {
-      return NextResponse.json({ ok: true });
-    }
+    
 
     const website = normaliseWebsite(websiteInput);
 
