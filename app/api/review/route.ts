@@ -13,7 +13,6 @@ type ReviewPayload = {
   goal?: unknown;
   consent?: unknown;
   companyFax?: unknown;
-  startedAt?: unknown;
 };
 
 function text(value: unknown, max: number) {
@@ -60,8 +59,6 @@ export async function POST(request: Request) {
     const goal = text(body.goal, 1500);
     const companyFax = text(body.companyFax, 160);
     const consent = body.consent === true;
-    const startedAt =
-      typeof body.startedAt === "number" ? body.startedAt : 0;
 
     // Honeypot: quietly accept obvious bot submissions without sending email.
     if (companyFax) {

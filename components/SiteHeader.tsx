@@ -15,7 +15,7 @@ export default function SiteHeader() {
         ========================== */}
         <Link
           href="/"
-          className="flex min-w-0 items-center gap-3"
+          className="site-brand"
           aria-label="AN Digital Studio home"
           onClick={() => setMenuOpen(false)}
         >
@@ -86,7 +86,7 @@ export default function SiteHeader() {
         <div className="mobile-actions">
           <Link
             href="/audit"
-            className="button-primary button-small"
+            className="button-primary button-small mobile-review-link"
           >
             Free review
             <span aria-hidden="true">↗</span>
@@ -120,7 +120,7 @@ export default function SiteHeader() {
         <nav
           id="mobile-site-menu"
           aria-label="Mobile navigation"
-          className="mobile-menu-panel container-shell md:hidden"
+          className="mobile-menu-panel container-shell"
         >
           <Link
             href="/#services"

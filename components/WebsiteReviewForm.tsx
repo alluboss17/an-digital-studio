@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useState } from "react";
 
 type Props = {
   calUrl?: string | null;
@@ -14,7 +14,6 @@ const inputClass =
 export default function WebsiteReviewForm({ calUrl }: Props) {
   const [state, setState] = useState<FormState>("idle");
   const [message, setMessage] = useState("");
-  const startedAt = useMemo(() => Date.now(), []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -41,7 +40,6 @@ export default function WebsiteReviewForm({ calUrl }: Props) {
           goal: data.get("goal"),
           consent: data.get("consent") === "on",
           companyFax: data.get("companyFax"),
-          startedAt,
         }),
       });
 
