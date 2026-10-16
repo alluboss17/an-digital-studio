@@ -7,67 +7,55 @@ import { useState } from "react";
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
   return (
     <header className="site-header">
       <div className="container-shell nav-shell">
-        {/* =========================
-            LOGO
-        ========================== */}
+        {/* Logo and business name */}
         <Link
           href="/"
-          className="flex min-w-0 items-center gap-3"
+          className="site-brand"
           aria-label="AN Digital Studio home"
-          onClick={() => setMenuOpen(false)}
+          onClick={closeMenu}
         >
           <span className="brand-mark">
-           <Image
+            <Image
               src="/logo.png"
               alt=""
               width={42}
               height={42}
               priority
-             className="h-full w-full object-contain"
-           />
-            
+              className="h-full w-full object-contain"
+            />
           </span>
 
           <span className="brand-name">
-            AN Digital Studio<span className="brand-dot">.</span>
+            AN Digital Studio
+            <span className="brand-dot">.</span>
           </span>
         </Link>
 
-        {/* =========================
-            DESKTOP NAVIGATION
-        ========================== */}
+        {/* Desktop navigation */}
         <nav
           aria-label="Main navigation"
           className="desktop-nav"
         >
-          <Link
-            href="/#services"
-            className="nav-link"
-          >
+          <Link href="/#services" className="nav-link">
             Services
           </Link>
 
-          <Link
-            href="/work"
-            className="nav-link"
-          >
+          <Link href="/work" className="nav-link">
             Work
           </Link>
 
-          <Link
-            href="/about"
-            className="nav-link"
-          >
+          <Link href="/about" className="nav-link">
             About
           </Link>
 
-          <Link
-            href="/privacy"
-            className="nav-link"
-          >
+          <Link href="/privacy" className="nav-link">
             Privacy
           </Link>
 
@@ -80,13 +68,12 @@ export default function SiteHeader() {
           </Link>
         </nav>
 
-        {/* =========================
-            MOBILE ACTIONS
-        ========================== */}
+        {/* Mobile actions */}
         <div className="mobile-actions">
           <Link
             href="/audit"
-            className="button-primary button-small"
+            className="button-primary button-small mobile-review-link"
+            onClick={closeMenu}
           >
             Free review
             <span aria-hidden="true">↗</span>
@@ -95,16 +82,10 @@ export default function SiteHeader() {
           <button
             type="button"
             className="mobile-menu-toggle"
-            aria-label={
-              menuOpen
-                ? "Close menu"
-                : "Open menu"
-            }
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-site-menu"
-            onClick={() =>
-              setMenuOpen((open) => !open)
-            }
+            onClick={() => setMenuOpen((open) => !open)}
           >
             <span aria-hidden="true">
               {menuOpen ? "×" : "☰"}
@@ -113,53 +94,36 @@ export default function SiteHeader() {
         </div>
       </div>
 
-      {/* =========================
-          MOBILE MENU
-      ========================== */}
+      {/* Mobile dropdown */}
       {menuOpen && (
         <nav
           id="mobile-site-menu"
           aria-label="Mobile navigation"
-          className="mobile-menu-panel container-shell md:hidden"
+          className="mobile-menu-panel container-shell"
         >
-          <Link
-            href="/#services"
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link href="/#services" onClick={closeMenu}>
             Services
           </Link>
 
-          <Link
-            href="/work"
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link href="/work" onClick={closeMenu}>
             Selected work
           </Link>
 
-          <Link
-            href="/about"
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link href="/about" onClick={closeMenu}>
             About the studio
           </Link>
 
-          <Link
-            href="/privacy"
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link href="/privacy" onClick={closeMenu}>
             Privacy notice
           </Link>
 
-          <Link
-            href="/audit"
-            onClick={() => setMenuOpen(false)}
-          >
-            Free website review
+          <Link href="/audit" onClick={closeMenu}>
+            Free website review ↗
           </Link>
 
           <a
             href="mailto:hello@andigitalstudio.com"
-            onClick={() => setMenuOpen(false)}
+            onClick={closeMenu}
           >
             Email AN Digital Studio
           </a>
