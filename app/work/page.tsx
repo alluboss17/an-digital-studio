@@ -35,7 +35,7 @@ const projects = [
       "English and Bengali content experience",
       "Project information, galleries and contact pathways",
     ],
-    href: "https://3s-land-developers.vercel.app/",
+    href: "https://www.3slanddevelopers.com/",
     cta: "Visit live website",
     primary: false,
     note:
